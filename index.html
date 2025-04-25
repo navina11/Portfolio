@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9527b6b265.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logopic.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Internships</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Development</p>
+                <h1>I'm <span>N. Navina Nanthini</span><br>from India.</h1>
+            </div>
+        </div>
+    </div>
+   
+<!-------------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Navina Pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Pre-final year Computer Science Engineering student with a strong foundation in programming, web development, and database management. 
+                        Passionate about building efficient and user-friendly applications, with hands-on experience 
+                        in full stack development using Python and Django. Eager to contribute technical skills and creativity to dynamic projects.
+                        Strong interest in Cloud Computing and eager to contribute technical skills and creativity to innovative, cloud-based 
+                        solutions and dynamic tech projects.</p>
+
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Soft Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Technical Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+             </div>
+             <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Team Work</span><br>
+                    Time management <br>Leadership</li>
+                    <li><span>Inter-personal Skill</span> <br> Communication Skill <br>Quick Adaptations <br>Problem Solving</li>
+                </ul>
+             </div>
+             <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Front-End</span><br>HTML, CSS</li>
+                    <li><span>Back-End</span><br>Python, Django</li>
+                    <li><span>Data Analytics</span><br>OracleSql, PowerBI</li>
+                </ul>
+             </div>
+             <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-2026</span><br>B.E Computer Science & Engineering(pursuing) <br>St.Michael College of Engg. & Tech.
+                         <br>CGPA: 8.3</li>
+                    <li><span>2022</span><br>HR. SEC. SCHOOL <br>Percentage: 75%</li>
+                    <li><span>2020</span><br>SSLC <br>Percentage: 78.3%</li>
+                </ul>
+             </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------services--------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Workshops & Internships</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Web Development</h2>
+                    <p>Completed an internship focused on Python (Django)-based web development
+                         Developed and deployed functional web modules using full stack technologies <br>At PHOENIX SOFTECH</p>
+                    <a href="a">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>The Oracle SQL Workshop</h2>
+                    <p>Participated in a two-day Workshop based on QracleSQL organized by <br>Tech Data Community.  </p>
+                    <a href="a">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Development Bootcamp</h2>
+                    <p> WebSprint 15-Day Web Development Bootcamp
+                        Organized by SkillShift, powered by <br> Tarcin Robotics</p>
+                    <a href="a">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Analytics (Ongoing)</h2>
+                    <p>Learning and upskilling the database with project based on a 3-month internship <br> Tarcin Robotics</p>
+                    <a href="a">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------portfolio------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/web.jpg">
+                    <div class="layer">
+                        <h3>WebSprint Website</h3>
+                        <p>Completed an project focused on Full-Stack development for an WebSprint Online Courses and Enrollment</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot 2025-04-25 103712.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Created my own Portfolio Website For public view and Github port view</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tech.jpg">
+                    <div class="layer">
+                        <h3>Carbon Zero 3.0, IIT Madras</h3>
+                        <p>Presented a project idea for the 'Pitch For the Planet Participant</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="a" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-------------------------contact------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>navinajeon@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8610979500</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/?lang=en-in"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Navina_ResumeN.pdf" download class="btn btn2">Download Resume/CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @navina. Made with <i class="fas fa-heart"></i></p>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwmozHYXGjiF5frae8uIJw9a1jsgyeRpxkeF9ICbfJ6GBuwVacCWt9l8iLIRudvQG09Jg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+
+</body>
+</html>
